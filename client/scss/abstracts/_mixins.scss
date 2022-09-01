@@ -1,0 +1,57 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+$md: breakpoint('md');
+$lg: breakpoint('lg');
+$xl: breakpoint('xl');
+
+/// Event wrapper
+/// @param {Bool} $self [false] - Whether or not to include current selector
+@mixin on-event($self: false) {
+  @if $self {
+
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+
+  @else {
+
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+/// Make a context based selector a little more friendly
+/// @param {String} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
+
+// Mixin For Media Screen min width md and max width lg
+@mixin normal {
+  @media only screen and (min-width: $md) and (max-width: $lg) {
+    @content;
+  }
+}
+
+// Mixin For Media Screen min width with xl
+@mixin large {
+  @media only screen and (min-width: $lg) and (max-width: $xl) {
+    @content;
+  }
+}
+
+@mixin extraLarge {
+  @media only screen and (min-width: $xl) {
+    @content;
+  }
+}

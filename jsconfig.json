@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@/components/*": ["client/components/*"],
+            "@/containers/*": ["client/containers/*"],
+            "@/styles/*": ["client/styles/*"],
+            "@/utils/*": ["client/utils/*"],
+            "@/store/*": ["client/store/*"]
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.user {
+  padding-top: 66px;
+
+  &-menu {
+    display: none;
+  }
+}
+
+@include normal {
+  .user {
+    &-menu {
+      display: block;
+      padding: 1rem;
+
+      &-list {
+        list-style: none;
+        padding: 0;
+        margin: .5rem;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &-tabs {
+      display: none;
+    }
+  }
+}
+
+@include large {
+  .user {
+    &-menu {
+      display: block;
+      padding: 1rem;
+
+      &-list {
+        list-style: none;
+        padding: 0;
+        margin: .5rem;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &-tabs {
+      display: none;
+    }
+  }
+}

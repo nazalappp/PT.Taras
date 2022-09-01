@@ -1,0 +1,47 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:react/recommended",
+    "standard"
+  ],
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "@next/next/no-document-import-in-page": "error",
+    "@next/next/no-head-import-in-document": "error",
+    "@next/next/no-html-link-for-pages": "error",
+    "@next/next/no-img-element": "error",
+    "@next/next/no-sync-scripts": "error",
+    "@next/next/no-title-in-document-head": "error",
+    "@next/next/no-unwanted-polyfillio": "error",
+    "@next/next/no-typos": "error",
+    "react/prop-types": 2,
+    "strict": 0,
+    "template-curly-spacing": "off",
+    "indent": [
+        "error", 2, {
+          "ignoredNodes": ["TemplateLiteral"]
+        }
+    ],
+    "comma-dangle": [
+      "error", "never"
+    ],
+    "semi": [
+      "error", "never"
+    ],
+    "jsx-quotes": [
+      "error", "prefer-single"
+    ],
+    "no-trailing-spaces":"off",
+    "quotes": [
+      "error", "single", {"allowTemplateLiterals": true}
+    ],
+    "generator-star-spacing": ["off"],
+    "no-unused-vars": "error",
+    "no-var": "error",
+    "no-useless-escape":"off",
+    "curly": "off",
+    "valid-typeof": "off"
+  }
+}

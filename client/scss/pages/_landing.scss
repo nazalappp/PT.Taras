@@ -1,0 +1,126 @@
+.landing {
+  padding-top: 66px;
+
+  &__search {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    &__action {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &__partner {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  &__article {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  &-carousel {
+    position: relative;
+    background-color: #424242;
+    color: #fff;
+    margin-bottom: 3rem;
+
+    .carousel-wrapper {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, .3);
+
+      &-content {
+        position: relative;
+        padding: 24px;
+        height: 360px;
+        max-height: 360px;
+      }
+    }
+  }
+}
+
+.skeleton-carousel {
+  height: 280px;
+  max-height: 280px;
+}
+
+@include normal {
+  .landing {
+    padding-top: 0;
+
+    &-article {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    &-carousel {
+      position: relative;
+      background-color: #424242;
+      color: #fff;
+      margin-bottom: 3rem;
+
+      .carousel-wrapper {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .3);
+
+        &-content {
+          height: 480px;
+          max-height: 480px;
+        }
+      }
+    }
+  }
+
+  .skeleton-carousel {
+    height: 480px;
+    max-height: 480px;
+  }
+}
+
+@include large {
+  .landing {
+    padding-top: 0;
+
+    &-article {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    &-carousel {
+      position: relative;
+      background-color: #424242;
+      color: #fff;
+      margin-bottom: 3rem;
+
+      .carousel-wrapper {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .3);
+
+        &-content {
+
+          height: 480px;
+          max-height: 480px;
+        }
+      }
+    }
+  }
+
+  .skeleton-carousel {
+    height: 480px;
+    max-height: 480px;
+  }
+}

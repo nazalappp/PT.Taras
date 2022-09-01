@@ -1,0 +1,38 @@
+/* =============== Main Theme =============== */
+$themes: ('main-color': #17A700,
+  'second': #181916,
+  'grey-content': #A6A7A6);
+/* =============== Main Theme =============== */
+
+/* =============== Colors Palette =============== */
+$colors: ('green': #17A700,
+  'green-light' : #E8FFE4,
+  'secondary': #181916,
+  'grey': #A6A7A6,
+  'black': #000,
+  'white': #fff);
+/* =============== Colors Palette =============== */
+
+/* =============== Fonts =============== */
+$font-normal: 'Inter Light';
+$font-regular: 'Inter Regular';
+$font-bold: 'Inter Bold';
+/* =============== Fonts =============== */
+
+/// Copy text color
+/// @type Color
+$text-color: rgb(34, 34, 34) !default;
+
+// Breakpoints
+$breakpoints: ('xs': 0px,
+  'sm': 600px,
+  'md': 900px,
+  'lg': 1200px,
+  'xl': 1536px);
+
+// Radius
+$border-radius: 5px;
+$cardless-radius: 8px;
+$button-radius: 6px;
+$search-card-radius: 12px;
+$search-image-radius: 8px;

@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+// Font Normal
+@font-face {
+  font-family: $font-normal;
+  src: font('Inter-Light.ttf');
+}
+
+// Font Regular
+@font-face {
+  font-family: $font-regular;
+  src: font('Inter-Regular.ttf');
+}
+
+// Font Bold
+@font-face {
+  font-family: $font-bold;
+  src: font('Inter-Bold.ttf');
+}

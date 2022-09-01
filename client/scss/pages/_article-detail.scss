@@ -1,0 +1,20 @@
+.article-detail {
+  padding-top: 66px;
+  margin-bottom: 3rem;
+}
+
+.article-content {
+  &-title {
+    font-size: 1.75rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  &-paragraph {
+    font-size: .8rem;
+  }
+}
+
+.related-article {
+  margin: 3rem auto;
+}

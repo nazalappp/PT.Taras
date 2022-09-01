@@ -1,0 +1,147 @@
+.footer {
+  margin-top: 5rem;
+  background: theme-color('main-color');
+  width: 100%;
+  color: color('white');
+
+  &__brand {
+    width: 170px;
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: url('/lapangan.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    flex-direction: column;
+
+    &__item {
+      margin-top: .3rem;
+      margin-bottom: .3rem;
+    }
+  }
+
+  &__link {
+    opacity: 1;
+    transition: ease .5s;
+  }
+
+  &__link:hover {
+    opacity: .5;
+  }
+
+  &__partner {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+
+    &__item {
+      margin-right: .5rem;
+    }
+  }
+
+  &__download {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__item {
+      margin-bottom: .5rem;
+
+      &__cta {
+        display: block;
+        width: 161px;
+        height: 48px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+        &:hover {
+          opacity: .8;
+          transition: ease .2s;
+        }
+      }
+    }
+
+    &__help {
+      text-align: left;
+    }
+  }
+
+  &__social__media {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-around;
+
+    &__item {
+      margin-right: .5rem;
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+  }
+}
+
+.partner__payment {
+  max-height: 50px;
+  height: 50px;
+}
+
+.download__cta {
+  max-height: 100px;
+  height: 100px;
+}
+
+@include normal {
+  .footer {
+    &__download {
+      margin-bottom: 25px;
+      justify-content: flex-end;
+    }
+
+    &__help {
+      text-align: right;
+    }
+
+    &__social__media {
+      justify-content: flex-end;
+    }
+
+    &__copyright {
+      text-align: left;
+    }
+  }
+}
+
+@include large {
+  .footer {
+    &__download {
+      margin-bottom: 25px;
+      justify-content: flex-end;
+    }
+
+    &__help {
+      text-align: right;
+    }
+
+    &__social__media {
+      justify-content: flex-end;
+    }
+
+    &__copyright {
+      text-align: left;
+    }
+  }
+}

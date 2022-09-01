@@ -1,0 +1,52 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass functions.
+// -----------------------------------------------------------------------------
+
+// Theme
+@function theme-color($key: "second-main") {
+  @return map-get($themes, $key);
+}
+
+// Colors
+@function color($key: "main-color") {
+  @return map-get($colors, $key);
+}
+
+// Breakpoints
+@function breakpoint($key: "md") {
+  @return map-get($breakpoints, $key);
+}
+
+/// Native `url(..)` function wrapper
+/// @param {String} $base - base URL for the asset
+/// @param {String} $type - asset type folder (e.g. `fonts/`)
+/// @param {String} $path - asset path
+/// @return {Url}
+/// @require $base-url
+@function asset($type, $path) {
+  @return url($type + $path);
+}
+
+/// Returns URL to an image based on its path
+/// @param {String} $path - image path
+/// @return {Url}
+/// @require $path
+@function image($path) {
+  @return asset('/images/', $path);
+}
+
+/// Returns URL to a font based on its path
+/// @param {String} $path - font path
+/// @return {Url}
+/// @require $path
+@function font($path) {
+  @return asset('/fonts/', $path);
+}
+
+/// Returns URL to an icon based on its path
+/// @param {String} $path - icon path
+/// @return {Url}
+/// @require $path
+@function icon($path) {
+  @return asset('/icons/', $path);
+}

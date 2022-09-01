@@ -1,0 +1,145 @@
+.card {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: $border-radius;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+
+
+  &:hover &-highlight {
+    opacity: 0.1;
+  }
+
+  &-fill-action {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    text-align: inherit;
+    width: 100%;
+  }
+
+  &-media {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &-image {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &-content {
+    padding: 1rem;
+
+    &-title {
+      font-size: 1rem;
+    }
+  }
+
+  &-highlight {
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: inherit;
+    opacity: 0;
+    background-color: currentcolor;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+
+  &-skeleton {
+    &-image {
+      margin-bottom: 2rem;
+    }
+
+    &-title {
+      margin-bottom: .7rem;
+    }
+
+    &-subtitle {
+      margin-top: .5rem;
+      margin-bottom: .5rem;
+      height: 24px;
+      max-height: 24px;
+    }
+
+    &-body {
+      height: 16px;
+      max-height: 16px;
+    }
+  }
+}
+
+.article {
+  height: 200px !important;
+  max-height: 200px !important;
+}
+
+.cardless {
+  width: 100%;
+  overflow: hidden;
+  background-color: colors('white');
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+
+    &__media {
+      display: block;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &__image {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__title {
+      font-size: 1.125rem;
+      line-height: 20px;
+    }
+
+    &__published {
+      font-size: 1rem;
+      line-height: 26px;
+    }
+
+    &__subtitle {
+      font-size: 1rem;
+      line-height: 26px;
+    }
+  }
+
+  &__radius {
+    border-radius: $cardless-radius;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+}
