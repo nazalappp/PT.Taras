@@ -13,10 +13,14 @@ function Example() {
     }
   });
 
+  const handlename =(e)=> {
+    setName(e.target.value)
+  }
+
   return (
     <div>
         <form action="">
-            <p>Your name : <input type="text" /></p>
+            <p >Your name : <input type="text" value={name} onChange={(e) => {handlename(e)}}/></p>
         </form>
       {/* <p>You clicked {count}</p>
       <button onClick={() => setCount(count + 1)}>
