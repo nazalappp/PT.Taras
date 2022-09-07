@@ -6,13 +6,14 @@ import { mapActions } from '@/store/'
 
 export default connect(
   null,
-  mapActions('getSliders', 'getArticles', 'getArenas')
+  mapActions('getSliders', 'getArticles', 'getArenas', 'getDetails')
 )(
   class LandingContainer extends Component {
     static propTypes = {
       getSliders: PropTypes.func,
       getArenas: PropTypes.func,
-      getArticles: PropTypes.func
+      getArticles: PropTypes.func,
+      getDetails: PropTypes.func
     }
 
     /* eslint-disable-next-line space-before-function-paren */
@@ -113,6 +114,7 @@ export default connect(
       await this.props.getSliders()
       await this.props.getArenas({ page: 1, limit: 6 })
       await this.props.getArticles({ page: 1, limit: 4 })
+      await this.props.getDetails()
     }
 
     render () {

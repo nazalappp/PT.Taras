@@ -26,7 +26,7 @@ function Example() {
       <button onClick={() => setCount(count + 1)}>
         Click me
       </button> */}
-      <p><Link href="blog"><a>Back to blog page</a></Link></p>
+      <p><Link href="blog"><a>Click here to open blog page</a></Link></p>
     </div>
   );
 }

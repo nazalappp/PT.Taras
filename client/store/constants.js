@@ -42,3 +42,35 @@ export const GET_PAYMENT_STATUS = 'GET_PAYMENT_STATUS'
 export const CREATE_PAYMENT_NOTIFY = 'CREATE_PAYMENT_NOTIFY'
 export const GET_ORDERS = 'GET_ORDERS'
 export const GET_REVIEWS = 'GET_REVIEWS'
+
+
+/* =============== Action Type Test =============== */
+export const GET_TEST_RESQUESTED = 'GET_TEST_RESQUESTED'
+export const GET_TEST_SUCCES = 'GET_TEST_SUCCES'
+export const GET_TEST_FAILED = 'GET_TEST_FAILED'
+/* =============== Action Type Test =============== */
+
+
+
+/* =============== Action Type Family =============== */
+export const GET_FAMILY_RESQUESTED = 'GET_FAMILY_RESQUESTED'
+export const GET_FAMILY_SUCCES = 'GET_FAMILY_SUCCES'
+export const GET_FAMILY_FAILED = 'GET_FAMILY_FAILED'
+/* =============== Action Type Family =============== */
+
+
+
+/* =============== Action Type Profile =============== */
+export const GET_PROFILE_RESQUESTED = 'GET_PROFILE_RESQUESTED'
+export const GET_PROFILE_SUCCES = 'GET_PROFILE_SUCCES'
+export const GET_PROFILE_FAILED = 'GET_PROFILE_FAILED'
+export const CREATE_PROFILE_RESQUESTED = 'CREATE_PROFILE_RESQUESTED'
+export const CREATE_PROFILE_SUCCES = 'CREATE_PROFILE_SUCCES'
+export const CREATE_PROFILE_FAILED = 'CREATE_PROFILE_FAILED'
+export const UPDATE_PROFILE_RESQUESTED = 'UPDATE_PROFILE_RESQUESTED'
+export const UPDATE_PROFILE_SUCCES = 'UPDATE_PROFILE_SUCCES'
+export const UPDATE_PROFILE_FAILED = 'UPDATE_PROFILE_FAILED'
+export const DELETE_PROFILE_RESQUESTED = 'DELETE_PROFILE_RESQUESTED'
+export const DELETE_PROFILE_SUCCES = 'DELETE_PROFILE_SUCCES'
+export const DELETE_PROFILE_FAILED = 'DELETE_PROFILE_FAILED'
+/* =============== Action Type Profile =============== */

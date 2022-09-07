@@ -14,6 +14,7 @@ export const arenas = (state = initialState, action) => {
   const data = action?.payload
   switch (action.type) {
     case GET_ARENAS_REQUESTED:
+
       return {
         ...state,
         loading: true
