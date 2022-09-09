@@ -51,7 +51,6 @@ export default connect(
     componentDidMount () {
       this.props.articleDetail(this.props.params.slug)
     }
-
     render () {
       return (
         <ArticleDetailComponent

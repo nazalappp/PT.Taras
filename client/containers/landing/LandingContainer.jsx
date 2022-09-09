@@ -2,18 +2,21 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import LandingComponent from '@/components/landing/LandingComponent'
 import { connect } from 'react-redux'
-import { mapActions } from '@/store/'
+import { mapActions, mapStateToProps } from '@/store/'
 
 export default connect(
-  null,
-  mapActions('getSliders', 'getArticles', 'getArenas', 'getDetails')
+  mapStateToProps('test', 'testArticle'),
+  mapActions('getSliders', 'getArticles', 'getArenas', 'getDetails', 'getTestArticles')
 )(
   class LandingContainer extends Component {
     static propTypes = {
       getSliders: PropTypes.func,
       getArenas: PropTypes.func,
       getArticles: PropTypes.func,
-      getDetails: PropTypes.func
+      getDetails: PropTypes.func,
+      test: PropTypes.array,
+      getTestArticle: PropTypes.func,
+      testArticle: PropTypes.array
     }
 
     /* eslint-disable-next-line space-before-function-paren */
@@ -114,7 +117,15 @@ export default connect(
       await this.props.getSliders()
       await this.props.getArenas({ page: 1, limit: 6 })
       await this.props.getArticles({ page: 1, limit: 4 })
-      await this.props.getDetails()
+      await this.props.getDetails({ page: 1, limit: 6})
+      await this.props.getTestArticles({ page: 1, limit: 4 })
+
+      setTimeout(() => {
+        console.log('in container arenas: ', this.props.test.arenas)
+      }, 5000); 
+      setTimeout(() => {
+        console.log('in container articles: ', this.props.testArticle.articles)
+      }, 5000);
     }
 
     render () {

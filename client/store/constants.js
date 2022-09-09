@@ -74,3 +74,9 @@ export const DELETE_PROFILE_RESQUESTED = 'DELETE_PROFILE_RESQUESTED'
 export const DELETE_PROFILE_SUCCES = 'DELETE_PROFILE_SUCCES'
 export const DELETE_PROFILE_FAILED = 'DELETE_PROFILE_FAILED'
 /* =============== Action Type Profile =============== */
+
+/* =============== Action Type TestArticle============== */
+export const GET_TESTARTICLE_RESQUESTED = 'GET_TESTARTICLE_RESQUESTED'
+export const GET_TESTARTICLE_SUCCES = 'GET_TESTARTICLE_SUCCES'
+export const GET_TESTARTICLE_FAILED = 'GET_TESTARTICLE_FAILED'
+/* =============== Action Type TestArticle============== */

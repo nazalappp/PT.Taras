@@ -1,9 +1,14 @@
-import { GET_TEST_RESQUESTED, GET_TEST_SUCCES, GET_TEST_FAILED } from "../constants"
+import { 
+    GET_TEST_RESQUESTED, 
+    GET_TEST_SUCCES, 
+    GET_TEST_FAILED 
+} from "../constants"
 
 const initialState = {
     loading: false,
     name: "",
-    age: ""
+    age: "",
+    arenas: []
 }
 
 export const test = (state = initialState, action) => {
@@ -18,8 +23,7 @@ export const test = (state = initialState, action) => {
             return{
                 ...state,
                 loading: false,
-                name: data.name,
-                age: data.age
+                arenas: data
             }
         case GET_TEST_FAILED:
             return{

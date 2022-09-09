@@ -8,6 +8,8 @@ import * as reviewReducer from './reviewReducer'
 import * as sliderReducer from './sliderReducer'
 import * as sportReducer from './sportReducer'
 import * as userReducer from './userReducer'
+import * as detailReducer from './detailReducer'
+import * as testArticleReducer from './testArticleReducer'
 
 
 const reducers = {
@@ -20,7 +22,10 @@ const reducers = {
   ...reviewReducer,
   ...sliderReducer,
   ...sportReducer,
-  ...userReducer
+  ...userReducer,
+  ...detailReducer,
+  ...testArticleReducer
+
 }
 
 export default reducers
