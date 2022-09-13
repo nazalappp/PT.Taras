@@ -6,7 +6,7 @@ import { mapActions, mapStateToProps } from '@/store/'
 
 export default connect(
   mapStateToProps('test', 'testArticle', 'taras'),
-  mapActions('getSliders', 'getArticles', 'getArenas', 'getDetails', 'getTestArticles', 'getTaras')
+  mapActions('getSliders', 'getArticles', 'getArenas', 'getDetails', 'getTestArticles', 'getTarasArena', 'getTarasArticle', 'getTarasSlider')
 )(
   class LandingContainer extends Component {
     static propTypes = {
@@ -17,7 +17,9 @@ export default connect(
       test: PropTypes.array,
       getTestArticle: PropTypes.func,
       testArticle: PropTypes.array,
-      getTaras: PropTypes.func,
+      getTarasArena: PropTypes.func,
+      getTarasArticle: PropTypes.func,
+      getTarasSlider: PropTypes.func,
       taras: PropTypes.array
     }
 
@@ -121,7 +123,9 @@ export default connect(
       await this.props.getArticles({ page: 1, limit: 4 })
       await this.props.getDetails({ page: 1, limit: 6})
       await this.props.getTestArticles({ page: 1, limit: 4 })
-      await this.props.getTaras({page: 1, limit:4})
+      await this.props.getTarasArena({page: 1, limit:6})
+      await this.props.getTarasArticle({page: 1, limit: 4})
+      await this.props.getTarasSlider({page: 1, limit: 6})
 
       setTimeout(() => {
         console.log('in container arenas: ', this.props.test.arenas)
@@ -130,8 +134,14 @@ export default connect(
         console.log('in container articles: ', this.props.testArticle.articles)
       }, 5000);
       setTimeout(() => {
-        console.log('in container taras: ', this.props.taras)
+        console.log('in container taras arena: ', this.props.taras.arenas)
       }, 5000)
+      setTimeout(() => {
+        console.log('in container taras article: ', this.props.taras.articles)
+      }, 6000)
+      setTimeout(() => {
+        console.log('in container taras slider: ', this.props.taras.sliders)
+      }, 7000)
     }
 
     render () {
