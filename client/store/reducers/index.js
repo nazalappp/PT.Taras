@@ -10,6 +10,7 @@ import * as sportReducer from './sportReducer'
 import * as userReducer from './userReducer'
 import * as detailReducer from './detailReducer'
 import * as testArticleReducer from './testArticleReducer'
+import * as tarasReducer from './tarasReducer'
 
 
 const reducers = {
@@ -24,7 +25,8 @@ const reducers = {
   ...sportReducer,
   ...userReducer,
   ...detailReducer,
-  ...testArticleReducer
+  ...testArticleReducer,
+  ...tarasReducer
 
 }
 

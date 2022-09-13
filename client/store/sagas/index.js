@@ -11,6 +11,7 @@ import authSaga from './authSaga'
 import sliderSaga from './sliderSaga'
 import detailSaga from './detailSaga'
 import testArticleSaga from './testArticleSaga'
+import tarasSaga from './tarasSaga'
 
 export default function* rootSaga () {
   yield all([
@@ -19,6 +20,7 @@ export default function* rootSaga () {
     authSaga(),
     sliderSaga(),
     detailSaga(),
-    testArticleSaga()
+    testArticleSaga(),
+    tarasSaga()
   ])
 }

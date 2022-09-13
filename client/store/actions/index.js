@@ -4,6 +4,7 @@ import * as auth from './auth'
 import * as slider from './slider'
 import * as detail from './detail'
 import * as testArticle from './testArticle'
+import * as taras from './taras'
 
 const actions = {
   ...arena,
@@ -11,7 +12,8 @@ const actions = {
   ...auth,
   ...slider,
   ...detail,
-  ...testArticle
+  ...testArticle,
+  ...taras
 }
 
 export default actions

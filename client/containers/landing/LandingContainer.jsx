@@ -5,8 +5,8 @@ import { connect } from 'react-redux'
 import { mapActions, mapStateToProps } from '@/store/'
 
 export default connect(
-  mapStateToProps('test', 'testArticle'),
-  mapActions('getSliders', 'getArticles', 'getArenas', 'getDetails', 'getTestArticles')
+  mapStateToProps('test', 'testArticle', 'taras'),
+  mapActions('getSliders', 'getArticles', 'getArenas', 'getDetails', 'getTestArticles', 'getTaras')
 )(
   class LandingContainer extends Component {
     static propTypes = {
@@ -16,7 +16,9 @@ export default connect(
       getDetails: PropTypes.func,
       test: PropTypes.array,
       getTestArticle: PropTypes.func,
-      testArticle: PropTypes.array
+      testArticle: PropTypes.array,
+      getTaras: PropTypes.func,
+      taras: PropTypes.array
     }
 
     /* eslint-disable-next-line space-before-function-paren */
@@ -119,6 +121,7 @@ export default connect(
       await this.props.getArticles({ page: 1, limit: 4 })
       await this.props.getDetails({ page: 1, limit: 6})
       await this.props.getTestArticles({ page: 1, limit: 4 })
+      await this.props.getTaras({page: 1, limit:4})
 
       setTimeout(() => {
         console.log('in container arenas: ', this.props.test.arenas)
@@ -126,6 +129,9 @@ export default connect(
       setTimeout(() => {
         console.log('in container articles: ', this.props.testArticle.articles)
       }, 5000);
+      setTimeout(() => {
+        console.log('in container taras: ', this.props.taras)
+      }, 5000)
     }
 
     render () {

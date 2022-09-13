@@ -80,3 +80,10 @@ export const GET_TESTARTICLE_RESQUESTED = 'GET_TESTARTICLE_RESQUESTED'
 export const GET_TESTARTICLE_SUCCES = 'GET_TESTARTICLE_SUCCES'
 export const GET_TESTARTICLE_FAILED = 'GET_TESTARTICLE_FAILED'
 /* =============== Action Type TestArticle============== */
+
+
+/* =============== Action Type Taras============== */
+export const GET_TARAS_RESQUESTED = 'GET_TARAS_RESQUESTED'
+export const GET_TARAS_SUCCESS = 'GET_TARAS_SUCCESS'
+export const GET_TARAS_FAILED = 'GET_TARAS_FAILED'
+/* =============== Action Type Taras============== */
