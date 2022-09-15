@@ -5,22 +5,13 @@ import { connect } from 'react-redux'
 import { mapActions, mapStateToProps } from '@/store/'
 
 export default connect(
-  mapStateToProps('test', 'testArticle', 'taras'),
-  mapActions('getSliders', 'getArticles', 'getArenas', 'getDetails', 'getTestArticles', 'getTarasArena', 'getTarasArticle', 'getTarasSlider')
+  mapActions('getSliders', 'getArticles', 'getArenas')
 )(
   class LandingContainer extends Component {
     static propTypes = {
       getSliders: PropTypes.func,
       getArenas: PropTypes.func,
-      getArticles: PropTypes.func,
-      getDetails: PropTypes.func,
-      test: PropTypes.array,
-      getTestArticle: PropTypes.func,
-      testArticle: PropTypes.array,
-      getTarasArena: PropTypes.func,
-      getTarasArticle: PropTypes.func,
-      getTarasSlider: PropTypes.func,
-      taras: PropTypes.array
+      getArticles: PropTypes.func
     }
 
     /* eslint-disable-next-line space-before-function-paren */
@@ -121,27 +112,6 @@ export default connect(
       await this.props.getSliders()
       await this.props.getArenas({ page: 1, limit: 6 })
       await this.props.getArticles({ page: 1, limit: 4 })
-      await this.props.getDetails({ page: 1, limit: 6})
-      await this.props.getTestArticles({ page: 1, limit: 4 })
-      await this.props.getTarasArena({page: 1, limit:6})
-      await this.props.getTarasArticle({page: 1, limit: 4})
-      await this.props.getTarasSlider({page: 1, limit: 6})
-
-      setTimeout(() => {
-        console.log('in container arenas: ', this.props.test.arenas)
-      }, 5000); 
-      setTimeout(() => {
-        console.log('in container articles: ', this.props.testArticle.articles)
-      }, 5000);
-      setTimeout(() => {
-        console.log('in container taras arena: ', this.props.taras.arenas)
-      }, 5000)
-      setTimeout(() => {
-        console.log('in container taras article: ', this.props.taras.articles)
-      }, 6000)
-      setTimeout(() => {
-        console.log('in container taras slider: ', this.props.taras.sliders)
-      }, 7000)
     }
 
     render () {

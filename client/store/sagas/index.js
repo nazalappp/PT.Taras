@@ -9,18 +9,12 @@ import arenaSaga from './arenaSaga'
 import articleSaga from './articleSaga'
 import authSaga from './authSaga'
 import sliderSaga from './sliderSaga'
-import detailSaga from './detailSaga'
-import testArticleSaga from './testArticleSaga'
-import tarasSaga from './tarasSaga'
 
 export default function* rootSaga () {
   yield all([
     arenaSaga(),
     articleSaga(),
     authSaga(),
-    sliderSaga(),
-    detailSaga(),
-    testArticleSaga(),
-    tarasSaga()
+    sliderSaga()
   ])
 }

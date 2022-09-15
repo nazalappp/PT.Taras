@@ -44,22 +44,6 @@ export const GET_ORDERS = 'GET_ORDERS'
 export const GET_REVIEWS = 'GET_REVIEWS'
 
 
-/* =============== Action Type Test =============== */
-export const GET_TEST_RESQUESTED = 'GET_TEST_RESQUESTED'
-export const GET_TEST_SUCCES = 'GET_TEST_SUCCES'
-export const GET_TEST_FAILED = 'GET_TEST_FAILED'
-/* =============== Action Type Test =============== */
-
-
-
-/* =============== Action Type Family =============== */
-export const GET_FAMILY_RESQUESTED = 'GET_FAMILY_RESQUESTED'
-export const GET_FAMILY_SUCCES = 'GET_FAMILY_SUCCES'
-export const GET_FAMILY_FAILED = 'GET_FAMILY_FAILED'
-/* =============== Action Type Family =============== */
-
-
-
 /* =============== Action Type Profile =============== */
 export const GET_PROFILE_RESQUESTED = 'GET_PROFILE_RESQUESTED'
 export const GET_PROFILE_SUCCES = 'GET_PROFILE_SUCCES'
@@ -74,22 +58,3 @@ export const DELETE_PROFILE_RESQUESTED = 'DELETE_PROFILE_RESQUESTED'
 export const DELETE_PROFILE_SUCCES = 'DELETE_PROFILE_SUCCES'
 export const DELETE_PROFILE_FAILED = 'DELETE_PROFILE_FAILED'
 /* =============== Action Type Profile =============== */
-
-/* =============== Action Type TestArticle============== */
-export const GET_TESTARTICLE_RESQUESTED = 'GET_TESTARTICLE_RESQUESTED'
-export const GET_TESTARTICLE_SUCCES = 'GET_TESTARTICLE_SUCCES'
-export const GET_TESTARTICLE_FAILED = 'GET_TESTARTICLE_FAILED'
-/* =============== Action Type TestArticle============== */
-
-
-/* =============== Action Type Taras============== */
-export const GET_TARAS_ARENA_RESQUESTED = 'GET_TARAS_ARENA_RESQUESTED'
-export const GET_TARAS_ARENA_SUCCESS = 'GET_TARAS_ARENA_SUCCESS'
-export const GET_TARAS_ARENA_FAILED = 'GET_TARAS_ARENA_FAILED'
-export const GET_TARAS_ARTICLE_RESQUESTED = 'GET_TARAS_ARTICLE_RESQUESTED'
-export const GET_TARAS_ARTICLE_SUCCESS = 'GET_TARAS_ARTICLE_SUCCESS'
-export const GET_TARAS_ARTICLE_FAILED = 'GET_TARAS_ARTICLE_FAILED'
-export const GET_TARAS_SLIDER_RESQUESTED = 'GET_TARAS_SLIDER_RESQUESTED'
-export const GET_TARAS_SLIDER_SUCCESS = 'GET_TARAS_SLIDER_SUCCESS'
-export const GET_TARAS_SLIDER_FAILED = 'GET_TARAS_SLIDER_FAILED'
-/* =============== Action Type Taras============== */
