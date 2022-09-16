@@ -1,4 +1,5 @@
 import MetaHead from '@/components/core/MetaHead'
+import SignupContainer from '@/containers/signup/SignupContainer'
 import React, { Component, Fragment } from 'react'
 
 export default class index extends Component {
@@ -16,6 +17,7 @@ export default class index extends Component {
         return (
             <Fragment>
                 <MetaHead {...this.state.meta}/>
+                <SignupContainer/>
             </Fragment>
         )
     }
