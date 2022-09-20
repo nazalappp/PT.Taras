@@ -13,12 +13,7 @@ export default function SignupInformationComponent({
             padding: '1rem'
         }}
     >
-        <Typography
-            component= 'h5'
-            variant= 'h5'
-        >
-            Gabung dan gunakan fitur mudahnya
-        </Typography>
+        <h1 className='title'>Gabung dan gunakan fitur mudahnya</h1>
         <ul
             style={{display: 'flex', flexDirection: 'column', alignItems: 'center', listStyle: 'none', padding: 0}}
         >
