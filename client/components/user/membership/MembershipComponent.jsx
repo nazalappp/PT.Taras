@@ -28,15 +28,15 @@ function MembershipComponent (props) {
          </ul>
        </ul>     
 
-     <div class="container">
-         <div class="card1">
+     <div className="container">
+         <div className="card1">
           <h3 className='kanan'> Bulanan 
             <font color='green' className='idr'> IDR 250.000 </font>
           <p className='tahun'>Per bulan</p>
          </h3>
      </div>
 
-      <div class="card2">
+      <div className="card2">
           <h3 className='kanan'> Tahunan  
             <font color='green' className='idr'> IDR 250.000 </font>
           <p className='tahun'>Per tahun</p>
@@ -46,7 +46,7 @@ function MembershipComponent (props) {
     </div>
 
      </div>
-       <div class="btn">
+       <div className="btn">
         <Button variant="contained" color="success">Daftar Membership</Button>
        </div>
      <br/>

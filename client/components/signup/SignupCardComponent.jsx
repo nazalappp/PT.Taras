@@ -131,62 +131,59 @@ export default function SignupCardComponent({
     }
 
     return (
-        <Paper
-            elevation={2}
-            sx={{
-                padding: '1rem'
-            }}
-        >
-            <h1 className='title'>Sign Up</h1>
-            <p className='h3'>Buat akun untuk pengalaman yang lebih menyenangkan</p>
-            <Form onSubmit={onSubmit}>
-                <Controls.Input
-                    name='name'
-                    value={values.name}
-                    onChange={handleInputChange}
-                    placeholder='Masukan Nama Lengkap'
-                    error={errors.name}
-                    className={classess['input-space']}
-                />
-                <Controls.Input
-                    name='no_handphone'
-                    values={values.no_handphone}
-                    placeholder='Nomor Handphone / Email'
-                    onChange={handleInputChange}
-                    error={errors.no_handphone}
-                    className={classess['input-space']}
-                />
-                <Controls.Input
-                    type='password'
-                    name='password'
-                    values={values.password}
-                    placeholder='Password'
-                    onChange={handleInputChange}
-                    error={errors.password}
+        <div>
+            <Paper elevation={2} sx={{ padding: '1rem' }}>
+                <h1 className='title'>Sign Up</h1>
+                <p className='h3'>Buat akun untuk pengalaman yang lebih menyenangkan</p>
+                <Form onSubmit={onSubmit}>
+                    <Controls.Input
+                        name='name'
+                        value={values.name}
+                        onChange={handleInputChange}
+                        placeholder='Masukan Nama Lengkap'
+                        error={errors.name}
+                        className={classess['input-space']}
+                    />
+                    <Controls.Input
+                        name='no_handphone'
+                        values={values.no_handphone}
+                        placeholder='Nomor Handphone / Email'
+                        onChange={handleInputChange}
+                        error={errors.no_handphone}
+                        className={classess['input-space']}
+                    />
+                    <Controls.Input
+                        type='password'
+                        name='password'
+                        values={values.password}
+                        placeholder='Password'
+                        onChange={handleInputChange}
+                        error={errors.password}
 
-                    className={classess['input-space']}
-                />
-                <button className='button' type='submit'>Lanjutkan</button>
-                {/* <Controls.Button
-                    text='Lanjutkan'
-                    sx={{
-                        textAlign: 'center'
-                    }}
-                    type='submit'
-                    fullWidth={true}
-                    className={classess['input-space']}
-                /> */}
-                <h3 className='h3'>------------------------------- Masuk Dengan -------------------------------</h3>
-
-
-            </Form>
-            <button className='div'><FaApple /></button>
-
-            <button className='div'><FaFacebook /></button>
-
-            <button className='div'><FaGoogle /></button>
-        </Paper>
-    )
+                        className={classess['input-space']}
+                    />
+                    <button className='button' type='submit'>Lanjutkan</button>
+                    {/* <Controls.Button
+                        text='Lanjutkan'
+                        sx={{
+                            textAlign: 'center'
+                        }}
+                        type='submit'
+                        fullWidth={true}
+                        className={classess['input-space']}
+                    /> */}
+                </Form>
+                <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                    <span style={{flex: 4, display: 'block', height: '2px', backgroundColor: '#000000'}}></span>
+                    <h3 className='h3' style={{flex: 1, textAlign: 'center'}}>atau</h3>
+                    <span style={{flex: 4, display: 'block', height: '2px', backgroundColor: '#000000'}}></span>
+                </div>
+                <button className='div'><FaApple /></button>
+                <button className='div'><FaFacebook /></button>
+                <button className='div'><FaGoogle /></button>
+            </Paper>
+        </div>
+    );
 }
 
 SignupCardComponent.propTypes = {
