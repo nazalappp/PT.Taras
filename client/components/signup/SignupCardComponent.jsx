@@ -178,12 +178,13 @@ export default function SignupCardComponent({
                 /> */}
                 <h3 className='h3'>------------------------------- Masuk Dengan -------------------------------</h3>
 
-                <button className='div'><FaApple /></button>
 
-                <button className='div'><FaFacebook /></button>
-
-                <button className='div'><FaGoogle /></button>
             </Form>
+            <button className='div'><FaApple /></button>
+
+            <button className='div'><FaFacebook /></button>
+
+            <button className='div'><FaGoogle /></button>
         </Paper>
     )
 }

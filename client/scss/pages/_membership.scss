@@ -1,4 +1,88 @@
 .membership {
-  padding: 1rem;
-  width: 100%;
+  margin-top: 20px;
+  padding: 0.8rem;
+  width: 800px;
+  margin-left: 15px;
+  border: solid rgb(206, 229, 206) 0.150px; // hapus border
+  border-radius: 15px;
+  margin-bottom: 1em;
+}
+
+.profit {
+  margin-bottom: 8px;
+  padding: 0.8rem;
+  width: 800px;
+  margin-left: 15px;
+  border: solid rgb(206, 229, 206) 0.150px;
+  border-radius: 20px;
+}
+.r ul{
+
+  margin-left: 334px;
+  margin-top: -96px;
+}
+
+.t ul{
+  font-size: 12px;
+
+}
+
+.container {
+  margin: 20px auto;
+  width: 500px;
+  height: 90px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-row: auto auto;
+  grid-column-gap:0px;
+  grid-row-gap: 0px;
+  padding-right: 450px;
+}
+
+.container .card1{
+  margin-left: -130px;
+  padding-right: 15px;
+  margin-right: 190px;
+  border: solid rgb(35, 187, 35) 1px;
+  border-radius: 10px;
+  line-height: 6px;
+  margin-bottom: 31px;
+
+
+}
+.container .card2{
+  margin-left: -140px;
+  padding-right: 15px;
+  margin-right: 190px;
+  border: solid rgb(35, 187, 35) 1px;
+  border-radius: 10px;
+  line-height: 6px;   // Line untuk text 
+  margin-bottom: 31px;
+
+
+}
+.btn {
+  text-align: center;
+  width: 93%;
+}
+
+
+
+font.idr {
+  margin-left: 30.1%;
+
+
+}
+
+p.tahun{
+  margin-left: 68.5%;
+  font-size: small;
+  opacity: 0.5;
+
+}
+
+.kanan{
+  text-indent: 19px;
+
 }
