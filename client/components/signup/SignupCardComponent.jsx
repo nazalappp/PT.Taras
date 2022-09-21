@@ -4,6 +4,9 @@ import PropTypes from 'prop-types'
 import React, { useState } from 'react'
 import { Form, useForm } from '../core/UseForm'
 import Controls from '../shared/form/controls'
+import { FaGoogle } from 'react-icons/fa'
+import { FaApple } from 'react-icons/fa'
+import { FaFacebook } from 'react-icons/fa'
 
 
 const useStyles = makeStyles(theme => ({
@@ -76,19 +79,19 @@ export default function SignupCardComponent({
         })
 
 
-        if('no_handphone' in fieldOfValue)
-        temp.no_handphone = fieldOfValue.no_handphone
-            ? ''
-            : 'No Handphone tidak boleh kosong.'
+        if ('no_handphone' in fieldOfValue)
+            temp.no_handphone = fieldOfValue.no_handphone
+                ? ''
+                : 'No Handphone tidak boleh kosong.'
 
         setErrors({
             ...temp
         })
 
-        if('password' in fieldOfValue)
-        temp.password = fieldOfValue.password
-            ? ''
-            : 'Password tidak boleh kosong.'
+        if ('password' in fieldOfValue)
+            temp.password = fieldOfValue.password
+                ? ''
+                : 'Password tidak boleh kosong.'
 
         setErrors({
             ...temp
@@ -135,7 +138,7 @@ export default function SignupCardComponent({
             }}
         >
             <h1 className='title'>Sign Up</h1>
-            <h3 className='h3'>Buat akun untuk pengalaman yang lebih menyenangkan</h3>
+            <p className='h3'>Buat akun untuk pengalaman yang lebih menyenangkan</p>
             <Form onSubmit={onSubmit}>
                 <Controls.Input
                     name='name'
@@ -173,36 +176,13 @@ export default function SignupCardComponent({
                     fullWidth={true}
                     className={classess['input-space']}
                 /> */}
-                <h3 className='h3-2'>------------------------------- Masuk Dengan -------------------------------</h3>
-                {/* <Controls.Button
-                    text='Apple'
-                    sx={{
-                        textAlign: 'center'
-                    }}
-                    fullWidth={true}
-                    className={classess['input-space']}
-                />
-                <Controls.Button
-                    text='Facebook'
-                    sx={{
-                        textAlign: 'center'
-                    }}
-                    fullWidth={true}
-                    className={classess['input-space']}
-                />
-                <Controls.Button
-                    text='Google'
-                    sx={{
-                        textAlign: 'center'
-                    }}
-                    fullWidth={true}
-                    className={classess['input-space']}
-                /> */}
-                <table>
-                    <tr>
-                        <td><button><img src="apple.png" alt="" /></button></td>
-                    </tr>
-                </table>
+                <h3 className='h3'>------------------------------- Masuk Dengan -------------------------------</h3>
+
+                <button className='div'><FaApple /></button>
+
+                <button className='div'><FaFacebook /></button>
+
+                <button className='div'><FaGoogle /></button>
             </Form>
         </Paper>
     )
